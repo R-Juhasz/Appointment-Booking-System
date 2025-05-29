@@ -1,6 +1,6 @@
 ✨ Booking App
 The Booking App is a sleek, modern, and modular Angular standalone component designed for service-based businesses to manage and capture customer bookings seamlessly.
-![localhost_4200_ (1)](https://github.com/user-attachments/assets/8991f8a3-02f9-4fc6-86ce-cd92501dc137)
+![localhost_4200_ (2)](https://github.com/user-attachments/assets/197a7307-7f0e-4d55-ac39-65d87e924519)
 
 ✅ Features
 📅 User-friendly Booking Form
