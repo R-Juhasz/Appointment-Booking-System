@@ -1,59 +1,55 @@
-# BookingSystem
+✨ Booking App
+The Booking App is a sleek, modern, and modular Angular standalone component designed for service-based businesses to manage and capture customer bookings seamlessly.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
+✅ Features
+📅 User-friendly Booking Form
+Capture user data including name, email, selected service, preferred time, and additional notes.
 
-## Development server
+🧾 Booking History Display
+Shows submitted bookings in a clean list format.
 
-To start a local development server, run:
+🔄 Live Integration-ready Backend
+Includes a service (BookingService) that sends booking data to a company backend endpoint.
 
-```bash
+🧠 Reactive & Resettable Form
+Smooth form experience with reset after submission and focus effects.
+
+🎨 Sleek, Modern UI
+Built with SCSS for a clean and responsive design.
+
+📦 Technology Stack
+Angular 17+ Standalone Components
+
+TypeScript
+
+SCSS
+
+HttpClient for API Integration
+
+Modular Design (No NgModule required)
+
+🚀 Readiness for Integration
+Area	Status	Details
+Core Functionality	✅ Complete	Booking form with validation and display logic implemented
+API Integration	✅ Ready	BookingService uses HttpClient to POST data to company endpoint
+UI/UX Design	✅ Complete	Fully styled form with modern aesthetics and good accessibility
+Error Handling	⚠️ Basic	Needs improvement for production-grade resilience (e.g., user alerts)
+Unit Tests	❌ Not added	Can be added to increase reliability
+Deployment Setup	✅ Ready	Angular CLI ready; can be hosted on Firebase, GitHub Pages, etc.
+
+🛠 How to Run Locally
+bash
+Copy
+Edit
+npm install
 ng serve
-```
+Navigate to http://localhost:4200/ to see it in action.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+🔌 Backend Integration
+To send bookings to your backend, update the endpoint in booking.service.ts:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+ts
+Copy
+Edit
+private apiUrl = 'https://your-company-backend.com/api/bookings';
+Ensure CORS is enabled and the endpoint accepts POST JSON requests.
