@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { BookingComponent } from './components/booking/booking.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  standalone: true,
+  imports: [BookingComponent],
+  template: `
+    <h1>{{ title }}</h1>
+    <app-booking></app-booking>
+  `,
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'booking-system';
+  title = 'Booking System';
 }
